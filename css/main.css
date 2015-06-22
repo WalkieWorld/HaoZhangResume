@@ -1,0 +1,65 @@
+body > header{
+    background-color: #ffffff;
+}
+body > header .scrolled{
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+body > header .navbar-nav a{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+}
+body > main{
+    padding-top: 100px;
+}
+body > footer{
+    /**/
+}
+.navbar-nav{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    float: none;
+}
+.detail-info{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.links{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-between;
+}
+#bgSlice1{
+    background-image: url('../img/lespace-2-ice.jpg');
+}
+#bgSlice2{
+    background-image: url("../img/batman.jpg");
+}
+#bgSlice3{
+    background-image: url("../img/batman2.jpg");
+}
+#bgSlice1, #bgSlice2, #bgSlice3, #bgSlice4, #bgSlice5{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 300px;
+}
+#objective, #skills, #experience, #education, #Award{
+    position: relative;
+}
+.maskParent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
