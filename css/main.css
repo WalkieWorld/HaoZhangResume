@@ -5,11 +5,31 @@ body > header .scrolled{
     background: #ffffff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
-body > header .navbar-nav a{
+body > header .navbar-nav a, body > header .navbar-nav a:hover{
     font-size: 15px;
     font-weight: 600;
     line-height: 55px;
     letter-spacing: 0.01em;
+}
+body > header .navbar-nav a:before{
+    content: '•';
+    position: absolute;
+    font-size: 18px;
+    color: transparent;
+    left: 50%;
+    bottom: 0px;
+    text-shadow: 0 0 transparent;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+body > header .navbar-nav a:hover:before{
+    color: #fff;
+    text-shadow: 12px 0 #fff, -12px 0 #fff;
 }
 body > main{
     padding-top: 100px;
@@ -40,6 +60,7 @@ body > footer{
     justify-content: space-around;
     -webkit-justify-content: space-between;
 }
+/*
 #bgSlice1{
     background-image: url('../img/lespace-2-ice.jpg');
 }
@@ -63,3 +84,4 @@ body > footer{
     height: 100%;
     width: 100%;
 }
+*/
