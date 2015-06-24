@@ -8,3 +8,4 @@ $(function(){
         verticalOffset: 40
     });
 });
+$.backstretch("img/ITStuff_web.jpg");
