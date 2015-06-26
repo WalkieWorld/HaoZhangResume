@@ -1,17 +1,24 @@
-body > header{
+body > nav{
     background-color: transparent;
+    transition: background 0.3s ease-out;
 }
-body > header .scrolled{
+body > nav.scrolled{
     background: #ffffff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
-body > header .navbar-nav a, body > header .navbar-nav a:hover{
-    font-size: 15px;
+body > nav .navbar-nav a, body > nav .navbar-nav a:hover{
+    font-size: 22px;
     font-weight: 600;
-    line-height: 55px;
+    line-height: 50px;
     letter-spacing: 0.01em;
+    padding: 25px 15px;
+    color: #ffffff;
+    background-color: transparent;
 }
-body > header .navbar-nav a:before{
+body > nav.scrolled .navbar-nav a, body > nav.scrolled .navbar-brand{
+    color: #74c7d5;
+}
+body > nav .navbar-nav a:before{
     content: '•';
     position: absolute;
     font-size: 18px;
@@ -27,9 +34,114 @@ body > header .navbar-nav a:before{
     transform: translateX(-50%);
     pointer-events: none;
 }
-body > header .navbar-nav a:hover:before{
-    color: #fff;
+body > nav .navbar-nav a:hover:before{
+    color: #ffffff;
     text-shadow: 12px 0 #fff, -12px 0 #fff;
+}
+body > nav.scrolled .navbar-nav a:hover:before{
+    color: #74c7d5;
+    text-shadow: 12px 0 #74c7d5, -12px 0 #74c7d5;
+}
+body > nav .navbar-brand{
+    color: #3d3d3d;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    padding-top: 30px;
+    font-weight: 400;
+}
+body > nav .navbar-brand span {
+    font-size: 24px;
+    font-weight: 300;
+}
+body > header.jumbotron{
+    padding: 0px;
+    margin: 0px;
+    min-height: 500px;
+    background: transparent;
+    color: #ffffff;
+}
+body > header .header-box{
+
+    margin: 300px auto 0px;
+    width: 90%;
+}
+body > header .header-box p{
+    font-size: 35px;
+}
+body > header .header-box .left-col{
+    background: #ffffff;
+    background: rgba(255,255,255,0.85);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: transform .6s ease-in,opacity .8s ease-in;
+    transition: transform .6s ease-in,opacity .8s ease-in;
+}
+body > header .header-box .left-col.in{
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+}
+body > header .header-box .left-col h1{
+    -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    -ms-transform: translateX(-150px);
+    transform: translateX(-150px);
+    -webkit-transition: transform .6s ease-in,opacity .8s ease-in;
+    transition: transform .6s ease-in,opacity .8s ease-in;
+}
+body > header .header-box .left-col h1.in{
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+}
+body > header .header-box .left-col p{
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+    -webkit-transition: transform .5s ease-in 1s, opacity .3s ease-in 1s;
+    transition: transform .5s ease-in 1s, opacity .3s ease-in 1s;
+    opacity: 0;
+}
+body > header .header-box .left-col p.in{
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
+body > header .header-box .right-col figure{
+    -webkit-transform: translateX(150px);
+    -moz-transform: translateX(150px);
+    -ms-transform: translateX(150px);
+    transform: translateX(150px);
+    opacity: 0;
+}
+body > header .header-box .right-col figure.in{
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: transform .6s ease-in,opacity .8s ease-in;
+    transition: transform .6s ease-in,opacity .8s ease-in;
+    opacity: 1;
+}
+.right-col{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+.right-col figure img{
+    margin-top: -125px;
+    transform: skew(5deg,10deg) rotate(5deg);
+    box-shadow: 15px 5px 15px #3d3d3d;
+    width: 100%;
 }
 body > main{
     padding-top: 100px;
@@ -37,13 +149,13 @@ body > main{
 body > footer{
     /**/
 }
-.navbar-nav{
+/*.navbar-nav{
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     float: none;
-}
+}*/
 .detail-info{
     display: flex;
     display: -webkit-flex;

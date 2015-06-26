@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="navbar navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
     <div class="container">
         <section class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
@@ -16,9 +16,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a href="#home" class="navbar-brand">
+                Hao Zhang
+                <br>
+                <span>Web Developer</span>
+            </a>
         </section>
         <section class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="">Objective</a>
                 </li>
@@ -37,6 +42,26 @@
             </ul>
         </section>
     </div>
+</nav>
+<header id="home" class="jumbotron">
+    <div class="container">
+        <div class="header-box">
+            <section class="left-col col-md-7" data-scroll-animation="90%">
+                <h1 data-scroll-animation="90%">
+                    Hi, I AM Hao Zhang
+                </h1>
+                <p data-scroll-animation="90%">
+                    Web Designer and Developer
+                </p>
+            </section>
+            <section class="right-col col-md-4">
+                <figure data-scroll-animation="90%">
+                    <img src="img/smartstation-screenshot-web.png">
+                </figure>
+            </section>
+        </div>
+    </div>
+
 </header>
 <main>
     <div class="container">
@@ -195,6 +220,7 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
+<script src="js/noframework.waypoints.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
