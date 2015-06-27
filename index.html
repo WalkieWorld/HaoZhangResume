@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<section id="page-loader">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+</section>
 <nav class="navbar navbar-fixed-top">
     <div class="container">
         <section class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -22,7 +27,7 @@
                 <span>Web Developer</span>
             </a>
         </section>
-        <section class="navbar-collapse collapse">
+        <section id="header-nav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="">Objective</a>
@@ -50,6 +55,7 @@
                 <h1 data-scroll-animation="90%">
                     Hi, I AM Hao Zhang
                 </h1>
+
                 <p data-scroll-animation="90%">
                     Web Designer and Developer
                 </p>
@@ -61,22 +67,22 @@
             </section>
         </div>
     </div>
-
 </header>
 <main>
     <div class="container">
         <section id="objective">
             <h2>Objective</h2>
             <dl>
-                <dt>A web developer interested in gaining a position at an IT company utilizing my technical and cooperation
+                <dt>A web developer interested in gaining a position at an IT company utilizing my technical and
+                    cooperation
                     skills.
                 </dt>
             </dl>
         </section>
         <!--<div id="bgSlice1" data-stellar-background-ratio="0.5">-->
-            <!--<h1>-->
-                <!--Test Splice 1-->
-            <!--</h1>-->
+        <!--<h1>-->
+        <!--Test Splice 1-->
+        <!--</h1>-->
         <!--</div>-->
         <section id="skills">
             <h2>Skills</h2>
@@ -93,17 +99,18 @@
                     Basic Skills
                 </dt>
                 <dd>
-                    Java, PHP, SQL, XML-RPC, Liquid, C++, WinForm, Data Entity, Adobe Photoshop, Mongo DB, Node.js, Express,
+                    Java, PHP, SQL, XML-RPC, Liquid, C++, WinForm, Data Entity, Adobe Photoshop, Mongo DB, Node.js,
+                    Express,
                     jade
                 </dd>
             </dl>
         </section>
         <!--<div id="bgSlice2" data-stellar-background-ratio="0.5">-->
-            <!--<div class="maskParent">-->
-                <!--<h1>-->
-                    <!--Test Splice 2-->
-                <!--</h1>-->
-            <!--</div>-->
+        <!--<div class="maskParent">-->
+        <!--<h1>-->
+        <!--Test Splice 2-->
+        <!--</h1>-->
+        <!--</div>-->
         <!--</div>-->
         <section id="experience">
             <h2>Experience</h2>
@@ -140,17 +147,20 @@
                 <h3>Technical Support</h3>
                 <aside class="detail-info">
                     <em>General Data Technology Co., Ltd., Tianjin, Tianjin, China</em>
+
                     <p>May 2012 - May 2013</p>
                 </aside>
                 <ul>
-                    <li>Provided technical support of database to customers through email, phone, and in-person meeting.</li>
+                    <li>Provided technical support of database to customers through email, phone, and in-person
+                        meeting.
+                    </li>
                     <li>Collaborated with product and development team members for optimizing the database.</li>
-                    <li>Guided and trained customers to utilize the database tools to maintain their databases. </li>
+                    <li>Guided and trained customers to utilize the database tools to maintain their databases.</li>
                 </ul>
             </section>
         </section>
         <!--<div id="bgSlice3" data-stellar-background-ratio="0.5">-->
-            <!--<h1>Test Slice 3</h1>-->
+        <!--<h1>Test Slice 3</h1>-->
         <!--</div>-->
         <section id="education">
             <section>
@@ -159,6 +169,7 @@
                     <h3>MS: Web Design & Development (GPA: 4.0)</h3>
                     <aside class="detail-info">
                         <p>University of Denver, Denver, CO</p>
+
                         <p><em>June 2014 - Present</em></p>
                     </aside>
                 </section>
@@ -166,6 +177,7 @@
                     <h3>BS: Software Engineering</h3>
                     <aside class="detail-info">
                         <p>Wuhan University of Technology, Wuhan, Hubei, China</p>
+
                         <p><em>Sep 2006 - June 2010</em></p>
                     </aside>
                 </section>
@@ -173,13 +185,14 @@
                     <h3>BS: Finance</h3>
                     <aside class="detail-info">
                         <p>Zhongnan University of Economics and Law, Wuhan, Hubei, China</p>
+
                         <p><em>Sep 2006 - June 2010</em></p>
                     </aside>
                 </section>
             </section>
         </section>
         <!--<div id="bgSlice4" data-stellar-background-ratio="0.5">-->
-            <!--<h1>Test Slice 4</h1>-->
+        <!--<h1>Test Slice 4</h1>-->
         <!--</div>-->
         <section id="Award">
             <h2>Award</h2>
@@ -218,6 +231,7 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/noframework.waypoints.min.js"></script>

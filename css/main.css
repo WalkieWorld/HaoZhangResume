@@ -172,6 +172,54 @@ body > footer{
     justify-content: space-around;
     -webkit-justify-content: space-between;
 }
+#page-loader {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+}
+#page-loader i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #74c7d5;
+}
+@media screen and (max-width: 768px){
+    body > nav .navbar-nav a, body > nav .navbar-nav a:hover{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        padding: 0px;
+        text-align: center;
+    }
+    body > nav .navbar-nav a:hover:before{
+        color: transparent !important;
+        text-shadow: 0 0 transparent !important;
+    }
+    body > nav .navbar-toggle {
+        color: #74c7d5;
+        border-color: #74c7d5;
+        margin: 30px 30px 0px 0px;
+        height: 50px;
+    }
+    body > nav.scrolled{
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-brand{
+        height: auto;
+    }
+    .navbar-toggle .icon-bar{
+        border: 1px solid;
+    }
+    body > nav .navbar-brand {
+        padding: 30px 10px 10px;
+    }
+}
 /*
 #bgSlice1{
     background-image: url('../img/lespace-2-ice.jpg');
