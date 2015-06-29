@@ -6,6 +6,8 @@ $(window).load(function(){
     $('#page-loader').fadeOut(500);
 });
 
+$(".backstretch").stellar();
+
 $(function(){
 
     $('.jumbotron').height($(window).height());
@@ -50,8 +52,6 @@ $(function(){
             }
         });
     }, 600);
-
-    $(".backstretch").stellar();
 
     $("main").stellar();
 
