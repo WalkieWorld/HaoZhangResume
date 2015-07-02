@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="nav.navbar" data-offset="100">
 <section id="page-loader">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
 </section>
@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#home" class="navbar-brand">
+            <a href="#home" data-scroll-smooth class="navbar-brand">
                 Hao Zhang
                 <br>
                 <span>Web Developer</span>
@@ -30,19 +30,19 @@
         <section id="header-nav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="">Objective</a>
+                    <a href="#skills" data-scroll-smooth>Skills</a>
                 </li>
                 <li>
-                    <a href="">Skills</a>
+                    <a href="#timeline" data-scroll-smooth>Experience</a>
                 </li>
                 <li>
-                    <a href="">Experience</a>
+                    <a href="" data-scroll-smooth>Experience</a>
                 </li>
                 <li>
-                    <a href="">Education</a>
+                    <a href="" data-scroll-smooth>Education</a>
                 </li>
                 <li>
-                    <a href="">Award</a>
+                    <a href="" data-scroll-smooth>Award</a>
                 </li>
             </ul>
         </section>
@@ -71,148 +71,168 @@
 <main>
     <section id="skills">
         <div class="container">
-            <section class="skill-section">
-                <h4>Front-end Skills</h4>
+            <header class="section-title row">
+                <span>What I Offer</span>
+                <i class="fa fa-wrench"></i>
+                <i class="fa fa-cog"></i>
+            </header>
+            <main class="row">
+                <section class="skill-section">
+                    <section class="icon" data-scroll-animation="90%">
+                        <i class="fa fa-paint-brush"></i>
+                    </section>
+                    <h2 data-scroll-animation="90%">Front-end Skills</h2>
 
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 80%">
-                        HTML5 80%
+                    <div class="progress delay1" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            HTML5 80%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 75%">
-                        CSS3 75%
+                    <div class="progress delay2" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            CSS3 75%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 70%">
-                        Javascript 70%
+                    <div class="progress delay3" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            Javascript 70%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 75%">
-                        jQuery 75%
+                    <div class="progress delay4" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            jQuery 75%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 75%">
-                        Ajax 75%
+                    <div class="progress delay5" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            Ajax 75%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 60%">
-                        jade 60%
+                    <div class="progress delay6" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            jade 60%
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="skill-section">
-                <h4>Back-end Skills</h4>
+                </section>
+                <section class="skill-section">
+                    <section class="icon" data-scroll-animation="90%">
+                        <i class="fa fa-code"></i>
+                    </section>
+                    <h2 data-scroll-animation="90%">Back-end Skills</h2>
 
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 80%">
-                        C#, ASP.NET 80%
+                    <div class="progress delay7" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            C#, ASP.NET 80%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 65%">
-                        Java 65%
+                    <div class="progress delay8" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 65%">
+                            Java 65%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 60%">
-                        C++ 60%
+                    <div class="progress delay9" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            C++ 60%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 60%">
-                        PHP 60%
+                    <div class="progress delay10" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            PHP 60%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 80%">
-                        SQL 80%
+                    <div class="progress delay11" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            SQL 80%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 80%">
-                        SQL Server 80%
+                    <div class="progress delay12" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            SQL Server 80%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 70%">
-                        MySQL 70%
+                    <div class="progress delay13" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            MySQL 70%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 60%">
-                        Node.js, Express 60%
+                    <div class="progress delay14" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            Node.js, Express 60%
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="skill-section">
-                <h4>Tools</h4>
+                </section>
+                <section class="skill-section">
+                    <section class="icon" data-scroll-animation="90%">
+                        <i class="fa fa-wrench"></i>
+                    </section>
+                    <h2 data-scroll-animation="90%">Tools</h2>
 
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 95%">
-                        Windows 95%
+                    <div class="progress delay15" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 95%">
+                            Windows 95%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 75%">
-                        Linux: Ubuntu, Kali 75%
+                    <div class="progress delay16" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            Linux: Ubuntu, Kali 75%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 75%">
-                        Git 75%
+                    <div class="progress delay17" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%">
+                            Git 75%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 70%">
-                        Adobe Photoshop 70%
+                    <div class="progress delay18" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            Adobe Photoshop 70%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 80%">
-                        Visual Studio 80%
+                    <div class="progress delay19" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 80%">
+                            Visual Studio 80%
+                        </div>
                     </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 60%">
-                        Eclipse 60%
+                    <div class="progress delay20" data-scroll-animation="90%">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%">
+                            Eclipse 60%
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </main>
         </div>
     </section>
     <section id="timeline">
         <div class="container">
+            <header class="row section-title">
+                <span>What I Accomplished</span>
+                <i class="fa fa-flag"></i>
+            </header>
             <ul class="timeline">
                 <li>
                     <div class="timeline-mark">
                         <i class="fa fa-circle"></i>
 
-                        <p data-scroll-animation="90%">2006 - 2010</p>
+                        <h4 data-scroll-animation="95%">2006 - 2010</h4>
                     </div>
                     <article class="popover left" data-scroll-animation="90%">
                         <div class="arrow"></div>
@@ -245,7 +265,7 @@
                     <div class="timeline-mark">
                         <i class="fa fa-circle"></i>
 
-                        <p class="reverse" data-scroll-animation="90%">2010 - 2012</p>
+                        <h4 class="reverse" data-scroll-animation="95%">2010 - 2012</h4>
                     </div>
                     <article class="popover right reverse" data-scroll-animation="90%">
                         <div class="arrow"></div>
@@ -279,7 +299,7 @@
                     <div class="timeline-mark">
                         <i class="fa fa-circle"></i>
 
-                        <p class="reverse" data-scroll-animation="90%">2012 - 2013</p>
+                        <h4 class="reverse" data-scroll-animation="95%">2012 - 2013</h4>
                     </div>
                     <article class="popover right reverse" data-scroll-animation="90%">
                         <div class="arrow"></div>
@@ -314,7 +334,7 @@
                     <div class="timeline-mark">
                         <i class="fa fa-circle"></i>
 
-                        <p data-scroll-animation="90%">2014 - 2016</p>
+                        <h4 data-scroll-animation="95%">2014 - 2016</h4>
                     </div>
                     <article class="popover left" data-scroll-animation="90%">
                         <div class="arrow"></div>
@@ -337,14 +357,14 @@
                     <div class="timeline-mark">
                         <i class="fa fa-circle"></i>
 
-                        <p class="reverse" data-scroll-animation="90%">2015 - Present</p>
+                        <h4 class="reverse" data-scroll-animation="95%">2015 - Present</h4>
                     </div>
                     <article class="popover right reverse" data-scroll-animation="90%">
                         <div class="arrow"></div>
                         <h3 class="popover-title">Experience</h3>
 
                         <div class="popover-content">
-                            <h3>Web Developer Intern</h3>
+                            <h3>Web Developer</h3>
                             <aside class="detail-info">
                                 <em class="col-md-8">Peak 10 publishing, LLC, 4155 E Jewell Ave Ste 900, Denver, CO
                                     80222</em>
@@ -539,6 +559,7 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
