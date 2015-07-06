@@ -65,26 +65,6 @@ $(function(){
             }).catch(function(err){
                 console.log("Failed!", err);
             });;
-/*        var scrollAnimationCollection90 = document.querySelectorAll("[data-scroll-animation='90%']");
-        var scrollAnimationCollection95 = document.querySelectorAll("[data-scroll-animation='95%']");
-        for(var i = 0; i < scrollAnimationCollection90.length; i++){
-            var waypoint = new Waypoint({
-                element: scrollAnimationCollection90.item(i),
-                handler: function(direction) {
-                    this.element.classList.add('in');
-                },
-                offset: '90%'
-            });
-        }
-        for(var i = 0; i < scrollAnimationCollection95.length; i++){
-            var waypoint = new Waypoint({
-                element: scrollAnimationCollection95.item(i),
-                handler: function(direction) {
-                    this.element.classList.add('in');
-                },
-                offset: '95%'
-            });
-        }*/
 
         if (window.scrollY === 0){
             document.querySelector('body>nav').classList.remove('scrolled');
