@@ -13,7 +13,7 @@ $(window).load(function(){
     scrollSpyRefresh();
 });
 
-$(".backstretch").stellar();
+
 
 $(function(){
 
@@ -27,9 +27,18 @@ $(function(){
         scrollSpyRefresh();
     });
 
-    $.backstretch("img/ITStuff_web.jpg");
+    $.backstretch("img/keyboard_button_bw_enter.jpg");
 
     document.querySelector('.backstretch').setAttribute('data-stellar-ratio', '0.5');
+
+    $(".backstretch").stellar();
+
+    $(function(){
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+        });
+    });
 
     setTimeout(function () {
         'use strict'
@@ -41,7 +50,7 @@ $(function(){
                     var waypoint = new Waypoint({
                         element: collection.item(i),
                         handler: function(direction) {
-                            this.element.classList.add('in');
+                            this.element.classList.toggle('in');
                         },
                         offset: '90%'
                     });
@@ -57,7 +66,7 @@ $(function(){
                     var waypoint = new Waypoint({
                         element: collection.item(i),
                         handler: function(direction) {
-                            this.element.classList.add('in');
+                            this.element.classList.toggle('in');
                         },
                         offset: '95%'
                     });
@@ -83,18 +92,14 @@ $(function(){
         });
     }, 600);
 
-    $("main").stellar();
-
-    $(function(){
-        $.stellar({
-            horizontalScrolling: false,
-            verticalOffset: 40
-        });
-    });
-
     $('a[data-scroll-smooth]').click(function(e){
         $('html,body').scrollTo(this.hash, this.hash, {offset:{top: -100, left: 0}});
         e.preventDefault();
     });
 
+    // Adjust the height of bg because stellar.js modify the height.
+    setTimeout(function(){
+        var bgHeight = $(".backstretch").outerHeight() + 20;
+        $(".backstretch").outerHeight(bgHeight);
+    }, 400);
 });
