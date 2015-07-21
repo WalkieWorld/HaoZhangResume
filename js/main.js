@@ -40,41 +40,46 @@ $(function(){
         });
     });
 
+    function scrollAnimation(collection, offset){
+        for(var i = 0; i < collection.length; i++){
+            var waypoint = new Waypoint({
+                element: collection.item(i),
+                handler: function(direction) {
+                    this.element.classList.toggle('in');
+                },
+                offset: offset
+            });
+        }
+    }
+
     setTimeout(function () {
         'use strict'
-        new Promise(function(resolve, reject){
-            var scrollAnimationCollection90 = document.querySelectorAll("[data-scroll-animation='90%']");
-            resolve(scrollAnimationCollection90);
-        }).then(function(collection){
-                for(var i = 0; i < collection.length; i++){
-                    var waypoint = new Waypoint({
-                        element: collection.item(i),
-                        handler: function(direction) {
-                            this.element.classList.toggle('in');
-                        },
-                        offset: '90%'
-                    });
-                }
-            }).catch(function(err){
-                console.log("Failed!", err);
-            });
-        new Promise(function(resolve, reject){
-            var scrollAnimationCollection95 = document.querySelectorAll("[data-scroll-animation='95%']");
-            resolve(scrollAnimationCollection95);
-        }).then(function(collection){
-                for(var i = 0; i < collection.length; i++){
-                    var waypoint = new Waypoint({
-                        element: collection.item(i),
-                        handler: function(direction) {
-                            this.element.classList.toggle('in');
-                        },
-                        offset: '95%'
-                    });
-                }
-            }).catch(function(err){
-                console.log("Failed!", err);
-            });;
+        var scrollAnimationCollection90 = document.querySelectorAll("[data-scroll-animation='90%']");
+        try{
+            new Promise(function(resolve, reject){
+                resolve(scrollAnimationCollection90);
+            }).then(function(collection){
+                    scrollAnimation(collection, '90%');
+                }).catch(function(err){
+                    console.log("Failed!", err);
+                });
+        }catch(e){
+            scrollAnimation(scrollAnimationCollection90, '90%');
+        }
 
+        var scrollAnimationCollection95 = document.querySelectorAll("[data-scroll-animation='95%']");
+        try{
+            new Promise(function(resolve, reject){
+                resolve(scrollAnimationCollection95);
+            }).then(function(collection){
+                    scrollAnimation(collection, '95%');
+                }).catch(function(err){
+                    console.log("Failed!", err);
+                });;
+        }catch(e){
+            scrollAnimation(scrollAnimationCollection95, '95%');
+        }
+        
         if (window.scrollY === 0){
             document.querySelector('body>nav').classList.remove('scrolled');
         }
