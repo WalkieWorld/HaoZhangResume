@@ -479,6 +479,7 @@ body>footer{
     padding: 20px 0px;
     z-index: 1;
     position: relative;
+    margin: 0px auto;
 }
 #skills .section-title>i[class*="fa"]{
     color: #dddddd;
@@ -727,6 +728,45 @@ body>footer{
 #copy-right{
     color: #74c7d5;
     padding: 5px 0px 30px 15px;
+}
+@media screen and (max-width: 1200px){
+    body > header .header-box .left-col h1{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 991px){
+    .right-col figure img{
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(0deg, 0deg) rotateX(0deg) rotateZ(0deg)
+    }
+    .right-col{
+        position: absolute;
+        z-index: -1;
+    }
+    body > header .header-box{
+        position: relative;
+    }
+    body > header .header-box .left-col h1,
+    body > header .header-box .left-col p{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    body > header .header-box .right-col figure{
+        opacity: 0.75 !important;
+    }
+}
+@media screen and (max-height: 600px) and (max-width: 991px){
+    .right-col{
+        top: -100px;
+    }
+}
+@media screen and (max-height: 479px){
+    .right-col{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     body > nav .navbar-nav a, body > nav .navbar-nav a:hover{
