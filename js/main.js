@@ -79,7 +79,7 @@ $(function(){
         }catch(e){
             scrollAnimation(scrollAnimationCollection95, '95%');
         }
-        
+
         if (window.scrollY === 0){
             document.querySelector('body>nav').classList.remove('scrolled');
         }
@@ -98,7 +98,7 @@ $(function(){
     }, 600);
 
     $('a[data-scroll-smooth]').click(function(e){
-        $('html,body').scrollTo(this.hash, this.hash, {offset:{top: -100, left: 0}});
+        $('html,body').scrollTo(this.hash, this.hash, {offset:{top: -95, left: 0}});
         e.preventDefault();
     });
 
