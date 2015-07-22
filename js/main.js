@@ -100,6 +100,10 @@ $(function(){
     $('a[data-scroll-smooth]').click(function(e){
         $('html,body').scrollTo(this.hash, this.hash, {offset:{top: -95, left: 0}});
         e.preventDefault();
+
+        if ($('.navbar-collapse').hasClass('in')){
+            $('.navbar-collapse').removeClass('in').addClass('collapse');
+        }
     });
 
     // Adjust the height of bg because stellar.js modify the height.
