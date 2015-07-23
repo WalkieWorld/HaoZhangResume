@@ -1161,7 +1161,8 @@ body > footer {
         margin-bottom: -5px;
     }
     #about-me article{
-        padding: 0px 25px;
+        padding: 0px 0px;
+        width: 85%;
     }
     #about-me p{
         font-size: 18px;
