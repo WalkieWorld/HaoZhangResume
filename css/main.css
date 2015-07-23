@@ -905,7 +905,6 @@ body > footer {
         top: -100px;
     }
 }
-
 @media screen and (min-height: 750px) and (max-width: 991px)  {
     .right-col {
         top: -200px;
@@ -918,7 +917,7 @@ body > footer {
     }
 }
 
-@media screen and (max-height: 479px) {
+@media screen and (max-height: 550px) {
     .right-col {
         display: none;
     }
@@ -963,6 +962,7 @@ body > footer {
         letter-spacing: 0.01em;
         padding: 0px;
         text-align: center;
+        color: #228AA8;
     }
 
     body>nav .navbar-nav .active a,
@@ -971,8 +971,8 @@ body > footer {
     }
 
     body > nav .navbar-toggle {
-        color: #74c7d5;
-        border-color: #74c7d5;
+        color: #228AA8;
+        border-color: #228AA8;
         margin: 30px 30px 0px 0px;
         height: 50px;
     }
@@ -982,8 +982,12 @@ body > footer {
         border-bottom: 1px solid #ddd;
     }
 
-    .navbar-brand {
+    .navbar{
+        background-color: rgba(255,255,255, 0.9);
+    }
+    body > nav .navbar-brand {
         height: auto;
+        color: #228AA8;
     }
 
     .navbar-toggle .icon-bar {
@@ -1024,8 +1028,8 @@ body > footer {
     }
 
     .form-horizontal .form-group {
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 10%;
+        margin-left: 10%;
     }
     .form-group {
         margin-bottom: 0px;
@@ -1047,6 +1051,189 @@ body > footer {
         display: -webkit-flex;
         justify-content: center;
         -webkit-justify-content: center;
+    }
+}
+@media screen and (max-width: 750px) {
+    .skill-section h2{
+        font-size: 24px;
+    }
+    .progress{
+        height: 20px;
+    }
+    .progress-bar{
+        font-size: 14px;
+    }
+    .skill-section .icon{
+        font-size: 40px;
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-title > span{
+        font-size: 4.0em;
+    }
+    #about-me .section-title > i[class*="fa"] {
+        font-size: 5.5em;
+    }
+}
+@media screen and (max-width: 479px) {
+    body > header .header-box .left-col h1{
+        font-size: 2.5em;
+    }
+    body > header .header-box p {
+        font-size: 25px;
+    }
+    .section-title > span {
+        font-size: 2em;
+    }
+    .section-title > i[class*="fa"]{
+        font-size: 4em;
+    }
+    .skill-section{
+        padding: 10px;
+    }
+    .skill-section .icon {
+        font-size: 30px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin-bottom: 20px;
+    }
+    .skill-section h2 {
+        font-size: 16px;
+        margin: 0px;
+    }
+    .progress-bar {
+        font-size: 12px;
+    }
+    .progress{
+        height: 18px;
+    }
+    #timeline article.popover {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    #timeline article.popover.left {
+        margin-left: -5%;
+    }
+    #timeline article.popover.right {
+        margin-right: 5%;
+    }
+    .popover.left > .arrow{
+        display: none;
+    }
+    .popover.right > .arrow{
+        display: none;
+    }
+    .timeline-mark{
+        top: 0%;
+    }
+    .timeline-mark h4{
+        margin-top: 0px;
+        margin-left: -55%;
+    }
+    .timeline-mark h4.reverse{
+        margin-left: -45%;
+    }
+    .timeline-mark>i[class*="fa"]{
+        display: none;
+    }
+    #timeline ul.timeline::before{
+        display: none;
+    }
+    #about-me .row > i.fa-user{
+        display: none;
+    }
+    #about-me h1{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        font-size: 28px;
+        line-height: 24px;
+        margin-top: -10px;
+        margin-bottom: -5px;
+    }
+    #about-me article{
+        padding: 0px 15px;
+    }
+    #about-me p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    #about-me .section-title > i[class*="fa"]{
+        font-size: 4em;
+    }
+    #contact-me .form-group .btn{
+        padding: 15px 30px;
+    }
+    .form-horizontal .form-group {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body > header .header-box p {
+        font-size: 20px;
+    }
+    body > header .header-box .left-col h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 320px) {
+    body > header .header-box .left-col h1 {
+        font-size: 1.8em;
+    }
+    body > header .header-box p {
+        font-size: 16px;
+    }
+    .section-title{
+        padding: 15px 0px;
+    }
+    .skill-section h2 {
+        font-size: 12px;
+    }
+    .skill-section .icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .section-title > i[class*="fa"] {
+        font-size: 3em;
+    }
+    .popover-content h3 {
+        font-size: 16px;
+    }
+    #about-me .section-title > i[class*="fa"] {
+        padding-top: 10px;
+        font-size: 3em;
+    }
+    #about-me h1{
+        font-size: 24px;
+    }
+    #contact-me .form-control {
+        margin-bottom: 10px;
+        height: 48px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    #contact-me form .form-group i[class*="fa"] {
+        top: 10px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #contact-me textarea.form-control {
+        font-size: 20px;
+        line-height: 32px;
+        padding-top: 10px;
+    }
+    #contact-me .form-group .btn {
+        padding: 10px 20px;
+        font-size: 18px;
     }
 }
 
