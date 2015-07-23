@@ -1107,7 +1107,7 @@ body > footer {
         margin-bottom: 20px;
     }
     .skill-section h2 {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0px;
     }
     .progress-bar {
@@ -1171,6 +1171,7 @@ body > footer {
     }
     #about-me .section-title > i[class*="fa"]{
         font-size: 4em;
+        padding-top: 15px;
     }
     #contact-me .form-group .btn{
         padding: 15px 30px;
