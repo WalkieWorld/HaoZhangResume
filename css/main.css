@@ -899,7 +899,7 @@ body > footer {
         margin-right: -15%;
     }
 }
-@media screen and (min-height: 550px) {
+@media screen and (min-height: 550px) and (max-width: 991px)  {
     .right-col {
         top: -140px;
     }
@@ -1161,7 +1161,7 @@ body > footer {
         margin-bottom: -5px;
     }
     #about-me article{
-        padding: 0px 15px;
+        padding: 0px 25px;
     }
     #about-me p{
         font-size: 18px;
